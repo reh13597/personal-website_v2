@@ -1,11 +1,8 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
+import me from '../../assets/images/me.png'
 import Loader from 'react-loaders'
 import { useEffect, useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-    faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact,
-    } from '@fortawesome/free-brands-svg-icons'
 
 const About = () => {
     const [letterClass, setLetterClass] = useState("text-animate")
@@ -23,41 +20,28 @@ const About = () => {
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass}
-                            strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+                            strArray={['A', 'b', 'o', 'u', 't', ' ', 'M', 'e']}
                             idx={15}
                         />
                     </h1>
                     <p>
-                        ohaegoheuashgehasoghgohaegoheuashgehasoghgohaegoheuashgehasoghgohaegoheuashgehasoghg
+                        I'm currently a first year student at SFU, enrolled within the
+                        SFU-ZJU Dual Degree program. In this program, I first have to
+                        study 3.5 years of Computing Science at SFU, then I fly over
+                        to Zhejiang University in China to get a Master of Finance over
+                        the course of 1.5 years.
                     </p>
                     <p>
-                        ohaegoheuashgehasoghg
+                        Some of my hobbies include skiing, hiking, biking, playing video
+                        games, visiting animal cafes, and eating food.
                     </p>
                     <p>
-                        ohaegoheuashgehasoghg
+                        If you get to know me well enough, you'll come to find that I'm a
+                        pretty chill person that loves to crack jokes and just have a good time.
                     </p>
                 </div>
-                <div className="stage-cube-cont">
-                    <div className="cubespinner">
-                        <div className="face1">
-                            <FontAwesomeIcon icon={faAngular} color="#DD0031" />
-                        </div>
-                        <div className="face2">
-                            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-                        </div>
-                        <div className="face3">
-                            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-                        </div>
-                        <div className="face4">
-                            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-                        </div>
-                        <div className="face5">
-                            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-                        </div>
-                        <div className="face6">
-                            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
-                        </div>
-                    </div>
+                <div className='pic-container'>
+                    <img src={me}/>
                 </div>
             </div>
             <Loader color="#92BFFF" type="ball-pulse-sync"/>

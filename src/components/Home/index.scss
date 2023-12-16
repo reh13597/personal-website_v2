@@ -1,5 +1,4 @@
 .home-page {
-
     .text-zone {
         position: absolute;
         left: 10%;
@@ -13,23 +12,6 @@
         color: #FFFFFF;
         font-size: 70px;
         font-weight: 400;
-
-        // &::before {
-        //     color: #92BFFF;
-        //     font-size: 18px;
-        //     position: absolute;
-        //     margin-top: -40px;
-        //     left: 15px;
-        // }
-
-        // &::after {
-        //     color: #92BFFF;
-        //     font-size: 18px;
-        //     position: absolute;
-        //     margin-top: 18px;
-        //     margin-left: 20px;
-        //     animation: fadeIn 1s 1.7s backwards;
-        // }
 
         img {
             max-width: 40px;
@@ -68,6 +50,11 @@
             background: #92BFFF;
             color: #373C4B;
         }
+    }
 
+    .pic-container {
+        margin-top: -5%;
+        margin-left: 40%;
     }
 }
+
