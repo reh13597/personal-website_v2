@@ -12,13 +12,6 @@
         color: #FFFFFF;
         font-size: 70px;
         font-weight: 400;
-
-        img {
-            max-width: 40px;
-            opacity: 0;
-            animation: rotateIn 1s linear both;
-            animation-delay: 1.4s;
-        }
     }
 
     h2 {
@@ -53,8 +46,17 @@
     }
 
     .pic-container {
-        margin-top: -5%;
-        margin-left: 40%;
+        margin-top: 3%;
+        margin-left: 45%;
+
+        .pic {
+            max-width: 500px;
+            max-height: 500px;
+            opacity: 0;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+            border-radius: 30px;
+        }
     }
 }
 

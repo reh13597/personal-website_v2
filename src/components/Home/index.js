@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders'
-import me from '../../assets/images/me.png'
+import me from '../../assets/images/me.jpg'
 import './index.scss'
 
 const Home = () => {
@@ -41,7 +41,7 @@ const Home = () => {
                     <Link to="/contact" className="flat-button">CONTACT ME</Link>
                 </div>
                 <div className='pic-container'>
-                    <img src={me}/>
+                    <img src={me} className='pic'/>
                 </div>
             </div>
             <Loader color="#92BFFF" type="ball-pulse-sync"/>

@@ -1,6 +1,7 @@
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
-import me from '../../assets/images/me.png'
+import ImageSlider from '../ImageSlider'
+import { SliderData } from '../ImageSlider/SliderData'
 import Loader from 'react-loaders'
 import { useEffect, useState } from 'react'
 
@@ -32,7 +33,7 @@ const About = () => {
                         the course of 1.5 years.
                     </p>
                     <p>
-                        Some of my hobbies include skiing, hiking, biking, playing video
+                        Some of my hobbies include skiing, hiking, going to the gym, playing video
                         games, visiting animal cafes, and eating food.
                     </p>
                     <p>
@@ -40,8 +41,8 @@ const About = () => {
                         pretty chill person that loves to crack jokes and just have a good time.
                     </p>
                 </div>
-                <div className='pic-container'>
-                    <img src={me}/>
+                <div className="image-slider">
+                    <ImageSlider slides={SliderData} />
                 </div>
             </div>
             <Loader color="#92BFFF" type="ball-pulse-sync"/>
