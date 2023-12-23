@@ -3,7 +3,6 @@
     width: 100%;
     height: 100px;
     position: absolute;
-    min-width: 500px;
 
     nav {
         display: block;
@@ -12,58 +11,14 @@
         top: 50%;
         margin-top: -2rem;
 
-        a {
-            font-size: 30px;
-            padding: 0 40px;
+        .nav-link {
+            font-size: 3rem;
+            padding: 0 4rem;
             position: relative;
             text-decoration: none;
 
-            i {
-                transition: all 0.3s ease-out;
-            }
-
             &:hover {
                 color: #FFFFFF;
-
-                svg {
-                    opacity: 0;
-                }
-
-                &:after {
-                    opacity: 1;
-                }
-            }
-
-            &:after {
-                content: '';
-                font-size: 20px;
-                letter-spacing: 2px;
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                margin-left: -3.65em;
-                opacity: 0;
-                transition: all 0.3s ease-out;
-            }
-
-            &:first-child {
-                &:after {
-                    content: "HOME"
-                }
-            }
-        }
-
-        a.about-link {
-            &:after {
-                content: 'ABOUT';
-                margin-left: -3.3em;
-            }
-        }
-
-        a.projects-link {
-            &:after {
-                content: 'PROJECTS';
-                margin-left: -3.8em;
             }
         }
 
@@ -74,7 +29,7 @@
         }
     }
 
-    ul {
+    .socials {
         position: absolute;
         right: 2em;
         text-align: center;
@@ -82,12 +37,12 @@
         top: 50%;
         margin-top: -2rem;
 
-        li {
+        .media-item {
             display: inline-block;
 
-            a {
+            .icon {
                 padding: 0 20px;
-                font-size: 30px;
+                font-size: 3rem;
 
                 &:hover svg {
                     color:#FFFFFF;
@@ -97,5 +52,56 @@
     }
 }
 
+.bars-icon, .close-icon {
+    display: none;
+}
 
+
+
+@media screen and (max-width: 1000px) {
+    .nav-bar {
+        width: 80px;
+        height: 100%;
+
+        nav {
+            display: block;
+            position: absolute;
+            top: 40%;
+
+            .nav-link {
+                font-size: 3rem;
+                position: relative;
+                text-decoration: none;
+                padding: 2rem 1rem;
+
+                &:hover {
+                    color: #FFFFFF;
+                }
+            }
+
+            a.active {
+                svg {
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        .bars-icon, .close-icon {
+            display: block;
+            font-size: 3rem;
+            position: relative;
+            text-decoration: none;
+            width: 100%;
+            padding: 2rem 0;
+
+            &:hover {
+                color: #FFFFFF;
+            }
+        }
+
+        .socials {
+            display: none;
+        }
+    }
+}
 
