@@ -31,7 +31,7 @@ const Navbar = () => {
                     <FontAwesomeIcon className='nav-link' icon={faCode} color='#6B7181' />
                 </NavLink>
             </nav>
-            <ul className='socials'>
+            <ul className='socials' style={{display: showNav ? 'block' : 'none'}}>
                 <li className='media-item'>
                     <a
                         target='_blank'
