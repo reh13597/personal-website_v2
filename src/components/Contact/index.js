@@ -1,5 +1,4 @@
 import './index.scss'
-import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
@@ -32,64 +31,61 @@ const Contact = () => {
     }
 
     return (
-        <>
-            <div className="container contact-page">
-                <div className="text-zone">
-                    <h1>
-                        <AnimatedLetters
-                            letterClass={letterClass}
-                            strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
-                            idx={15}
-                        />
-                    </h1>
-                    <div className="contact-form">
-                        <form ref={form} onSubmit={sendEmail}>
-                            <ul>
-                                <li className="half">
-                                    <input
-                                        type="text"
-                                        name="from_name"
-                                        placeholder="Name"
-                                        required
-                                    />
-                                </li>
-                                <li className="half">
-                                    <input
-                                        type="email"
-                                        name="from_email"
-                                        placeholder="Email"
-                                        required
-                                    />
-                                </li>
-                                <li className="full">
-                                    <input
-                                        type="text"
-                                        name="subject"
-                                        placeholder="Subject"
-                                        required
-                                    />
-                                </li>
-                                <li>
-                                    <textarea
-                                        placeholder="Message"
-                                        name="message"
-                                        required
-                                    ></textarea>
-                                </li>
-                                <li>
-                                    <input
-                                        type="submit"
-                                        value="SEND"
-                                        className="flat-button"
-                                    />
-                                </li>
-                            </ul>
-                        </form>
-                    </div>
+        <div className="container contact-page">
+            <div className="text-zone">
+                <h1>
+                    <AnimatedLetters
+                        letterClass={letterClass}
+                        strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+                        idx={15}
+                    />
+                </h1>
+                <div className="contact-form">
+                    <form ref={form} onSubmit={sendEmail}>
+                        <ul>
+                            <li className="half">
+                                <input
+                                    type="text"
+                                    name="from_name"
+                                    placeholder="Name"
+                                    required
+                                />
+                            </li>
+                            <li className="half">
+                                <input
+                                    type="email"
+                                    name="from_email"
+                                    placeholder="Email"
+                                    required
+                                />
+                            </li>
+                            <li className="full">
+                                <input
+                                    type="text"
+                                    name="subject"
+                                    placeholder="Subject"
+                                    required
+                                />
+                            </li>
+                            <li>
+                                <textarea
+                                    placeholder="Message"
+                                    name="message"
+                                    required
+                                ></textarea>
+                            </li>
+                            <li>
+                                <input
+                                    type="submit"
+                                    value="SEND"
+                                    className="flat-button"
+                                />
+                            </li>
+                        </ul>
+                    </form>
                 </div>
             </div>
-            <Loader color="#92BFFF" type="ball-pulse-sync"/>
-        </>
+        </div>
     )
 }
 

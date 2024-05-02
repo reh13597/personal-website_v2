@@ -16,8 +16,7 @@
         display: block;
         clear: both;
         position: relative;
-        animation: fadeInUp 2s 2s;
-        animation-fill-mode: forwards;
+        animation: fadeInUp 0.3s forwards;
       }
 
       li.half {
@@ -97,3 +96,5 @@
       font-family: sans-serif;
     }
 }
+
+

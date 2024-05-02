@@ -3,6 +3,7 @@
     width: 100%;
     height: 100px;
     position: absolute;
+    z-index: 100;
     nav {
         display: block;
         text-align: center;
@@ -11,7 +12,7 @@
         top: 30%;
         .nav-link {
             font-size: 3rem;
-            padding: 0 2.5rem;
+            padding: 0 5rem;
             position: relative;
             text-decoration: none;
             &:hover {
@@ -48,6 +49,7 @@
         position: relative;
         text-decoration: none;
         padding: 2.8rem 2.6rem;
+        cursor: pointer;
         &:hover {
             color: #FFFFFF;
         }
@@ -58,6 +60,7 @@
         position: relative;
         text-decoration: none;
         padding: 3.3rem 3rem;
+        cursor: pointer;
         &:hover {
             color: #FFFFFF;
         }

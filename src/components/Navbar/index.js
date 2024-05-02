@@ -10,8 +10,8 @@ const Navbar = () => {
     const toggle = () => setShowNav(!showNav);
 
     return (
-        <div className='nav-bar' style={{ background: showNav ? '#2B2F39' : '#2A324B' }}>
-            <nav style={{display: showNav ? 'block' : 'none'}}>
+        <div className='nav-bar' style={{ background: showNav ? '#2A324B' : '#2B2F39' }}>
+            <nav style={{display: showNav ? 'none' : 'block'}}>
                 <NavLink
                     exact='true'
                     activeclassname='active'
@@ -31,7 +31,7 @@ const Navbar = () => {
                     <FontAwesomeIcon className='nav-link' icon={faCode} color='#6B7181' />
                 </NavLink>
             </nav>
-            <ul className='socials' style={{display: showNav ? 'block' : 'none'}}>
+            <ul className='socials' style={{display: showNav ? 'none' : 'block'}}>
                 <li className='media-item'>
                     <a
                         target='_blank'
@@ -65,14 +65,14 @@ const Navbar = () => {
                 icon={faBars}
                 color="#6B7181"
                 className='bars-icon'
-                style={{display: showNav ? 'none' : 'block'}}
+                style={{display: showNav ? 'block' : 'none'}}
             />
             <FontAwesomeIcon
                 onClick={toggle}
                 icon={faX}
                 color="#6B7181"
                 className='close-icon'
-                style={{display: showNav ? 'block' : 'none'}}
+                style={{display: showNav ? 'none' : 'block'}}
             />
         </div>
     )
