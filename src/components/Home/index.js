@@ -41,7 +41,7 @@ const Home = () => {
                 <div className='pic-container'>
                     <img src={me} className='pic'/>
                 </div>
-            </div>
+        </div>
     )
 }
 export default Home

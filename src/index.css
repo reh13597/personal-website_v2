@@ -1,15 +1,20 @@
 html {
   font-size: 62.5%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 body {
+  height: 100%;
   margin: 0;
   font: 300 11px/1.4 'Coolvetica', 'sans-serif';
   color: #444;
-  background: #2A324B;
-  overflow: hidden;
-  display: block;
+  background: #0040ff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  height: 100%;
+}

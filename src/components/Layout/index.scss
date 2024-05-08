@@ -1,6 +1,5 @@
 .container {
-    width: 80%;
-    height: 40%;
+    display: flex;
     position: absolute;
     opacity: 0;
     top: 20%;
@@ -13,7 +12,9 @@
 .projects-page,
 .contact-page {
     .text-zone {
-        padding-left: 15%;
+        min-width: 450px;
+        padding-left: 30%;
+        padding-right: 40%;
         h1 {
             font-size: 6em;
             color: #FFFFFF;
@@ -39,8 +40,9 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1450px) {
     .container {
+        flex-direction: column;
         width: 80%;
         height: 40%;
         position: absolute;
